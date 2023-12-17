@@ -16,6 +16,20 @@
     }
 }
 
+.logo{
+    width: 7vw;
+    height: 15vh;
+    margin-top: 35px;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 10px;
+
+    &:hover{
+        transition: 0.1s ease-in-out;
+        background-color: rgb(61, 61, 61);
+    }
+}
+
 .left_nav{
     position: fixed;
     top: 0;

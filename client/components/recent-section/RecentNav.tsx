@@ -1,25 +1,23 @@
 import styles from "../../styles/recent.module.css";
-import { Search } from "lucide-react";
+import ChatSearch from "../chat-section/ChatSearch";
 import PremiumRem from "./PremiumRem";
 import TrendingTopics from "./TrendingTopics";
+import { useRouter } from "next/router";
 
 const RecentNav = () => {
+  const router = useRouter();
+
+  const isExplorePage = router.pathname !== "/explore";
+
   return (
     <>
       <div className={styles.recent_nav}>
-        <div className="bg-neutral-800 flex flex-row rounded-3xl w-80 ml-7 h-10 mt-1">
-          <div className="flex items-center justify-center ml-2">
-            <Search color="#ffffff" />
-          </div>
-          <input
-            type="text"
-            className="ml-2 bg-transparent border-none focus:outline-none text-white"
-            placeholder="Search"
-          />
-        </div>
+        {isExplorePage && (
+          <ChatSearch width={80} />
+        )}
         <div>
-            <PremiumRem />
-            <TrendingTopics />
+          <PremiumRem />
+          {isExplorePage && <TrendingTopics />}
         </div>
       </div>
     </>
