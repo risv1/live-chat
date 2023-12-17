@@ -1,9 +1,8 @@
 import NavItem from "./NavItem";
 import styles from "../../styles/nav.module.css";
 import { Home, Search, Bell, Mail, UserRound, Sparkles } from "lucide-react";
-import { useState } from "react";
 
-const LeftNav = () => {
+const LeftNav = (props: {isModalOpen: boolean, onHandlePost: ()=>void}) => {
   const navSections = [
     ["home", "Home"],
     ["explore", "Explore"],
@@ -15,12 +14,6 @@ const LeftNav = () => {
 
   const icons = [<Home />, <Search />, <Bell />, <Mail />, <Sparkles />, <UserRound /> ];
 
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  const handlePost = () => {
-    setIsModalOpen(true)
-  }
-
   return (
     <div className={styles.left_nav}>
       <div className="mt-10">
@@ -29,7 +22,7 @@ const LeftNav = () => {
             {icons[index]}
           </NavItem>
         ))}
-        <button className={styles.button}>Post</button>
+        <button className={`${styles.button} mb-3`} onClick={props.onHandlePost}>Post</button>
       </div>
     </div>
   );

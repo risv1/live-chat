@@ -18,11 +18,12 @@
 
 html, body{
     scroll-behavior: smooth;
-    background-color: white;
+    background-color: black;
     font-family: 'Helvetica', 'Arial' , sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
   }
   
   h1{

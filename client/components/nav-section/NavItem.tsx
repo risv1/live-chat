@@ -9,10 +9,8 @@ const NavItem = (props: {
 }) => {
   return (
     <div className={styles.nav_item}>
-      <Link href={props.itemLink} className="text-2xl flex flex-row gap-5">
-        <div className="mt-1">
+      <Link href={props.itemLink} className="text-xl flex flex-row gap-5">
           {props.children}
-        </div>
         <span className="lg:inline-block hidden">
           {props.itemTitle}
         </span>
