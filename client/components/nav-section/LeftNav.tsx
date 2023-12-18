@@ -28,7 +28,7 @@ const LeftNav = (props: { isModalOpen: boolean; onHandlePost: () => void }) => {
     <div className={styles.left_nav}>
       <div className="mt-10">
         <Link href="/home">
-          <Image src={logo} alt="Logo" className={styles.logo} />
+          <Image src={logo} alt="Logo" className={`${styles.logo} lg:block hidden`} />
         </Link>
         {navSections.map((section, index) => (
           <NavItem

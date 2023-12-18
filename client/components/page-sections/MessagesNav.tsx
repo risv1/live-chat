@@ -1,5 +1,17 @@
-const MessagesNav = () => {
+import styles from "../../styles/msgs.module.css";
+import ComposeMsg from "../msg-section/ComposeMsg";
 
-}
+const NotificationNav = () => {
+  return (
+    <div className={styles.msgs_nav}>
+      <div className={`fixed ${styles.msgs_head} `}>
+        <h1 className="text-white ml-5 font-bold text-xl">Messages</h1>
+      </div>
+      <div className={styles.msgs_loader}>
+        <ComposeMsg />
+      </div>
+    </div>
+  );
+};
 
-export default MessagesNav;
+export default NotificationNav;

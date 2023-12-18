@@ -1,0 +1,41 @@
+$chat-width: 43vw;
+
+.notif_nav{
+    width: $chat-width;
+    height: 101vh;
+    background-color: black;
+    margin-left: 24vw;
+    border: 2px solid rgb(34, 34, 34);
+    z-index: 0;
+    overflow-y: auto;
+
+    @media screen and (max-width: 1020px) {
+        width: 100%;
+    }
+
+    .notif_head{
+        width: $chat-width - 0.2;
+        background-color: black;
+        opacity: 0.95;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        border-bottom: 3px solid rgb(34, 34, 34);
+    }
+
+    .notif_loader{
+        margin-top: 11.5vh;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.notif_load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}

@@ -13,9 +13,11 @@ const RecentNav = () => {
     <>
       <div className={styles.recent_nav}>
         {isExplorePage && (
-          <ChatSearch width={80} />
+          <div className="fixed w-80 bg-black h-12">
+            <ChatSearch width={80} />
+          </div>
         )}
-        <div>
+        <div className="mt-14">
           <PremiumRem />
           {isExplorePage && <TrendingTopics />}
         </div>

@@ -12,7 +12,11 @@ const Premium = () => {
   };
 
   const cancelSelect = () => {
-    setSelectedTab(null);
+    if (selectedTab) {
+      setSelectedTab(null);
+    }else{
+      closeModal()
+    }
   };
 
   const subscribeButtonClassName = selectedTab
@@ -47,12 +51,12 @@ const Premium = () => {
         </div>
         <div className="flex flex-col justify-center items-center">
           <button
-            className={`${subscribeButtonClassName} rounded-2xl h-10 w-40 mt-4`}
+            className={`${subscribeButtonClassName} rounded-2xl h-10 w-40 mt-3`}
           >
             Subscribe
           </button>
           <button
-            className="bg-red-500 rounded-2xl w-40 h-10 mt-2"
+            className="bg-red-500 rounded-2xl w-40 h-10 mt-1"
             onClick={cancelSelect}
           >
             Cancel

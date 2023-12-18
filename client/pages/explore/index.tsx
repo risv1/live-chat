@@ -1,9 +1,9 @@
-import ChatNav from "@/components/page-sections/ChatNav";
 import LeftNav from "@/components/nav-section/LeftNav";
 import Post from "@/components/overlay/Post";
 import RecentNav from "@/components/recent-section/RecentNav";
 import { useState } from "react";
 import Head from "next/head";
+import ExploreNav from "@/components/page-sections/ExploreNav";
 
 const ExplorePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,7 +27,7 @@ const ExplorePage = () => {
       </div>
       <div className="flex flex-row">
         <div>
-          <ChatNav />
+          <ExploreNav />
         </div>
         <div className="lg:block hidden">
           <RecentNav />

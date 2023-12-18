@@ -1,6 +1,6 @@
 import { Search } from "lucide-react";
 
-const ChatSearch = (props: {width: number}) => {
+const ChatSearch = (props: {width: any}) => {
     return(
         <div
             id="inputElement"

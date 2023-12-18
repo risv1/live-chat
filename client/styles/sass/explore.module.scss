@@ -1,0 +1,37 @@
+$chat-width: 43vw;
+
+.explore_nav{
+    width: $chat-width;
+    height: 101vh;
+    background-color: black;
+    margin-left: 24vw;
+    border: 2px solid rgb(34, 34, 34);
+    z-index: 0;
+    overflow-y: auto;
+
+    @media screen and (max-width: 1020px) {
+        width: 100%;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.explore_tab{
+    width: 21.4vw;
+    display: flex;
+    background-color: black;
+    height: 9vh;
+    color: white;
+    justify-content: center;
+    align-items: end;
+    padding: 8px;
+    transition: all 0.1s ease-in-out;
+    border-bottom: rgb(34, 34, 34) solid 2px;
+
+    &:hover {
+        background-color: rgb(34, 34, 34);
+        border-bottom: rgb(13, 159, 238) solid 2px;
+      }
+}
