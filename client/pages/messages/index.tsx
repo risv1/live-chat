@@ -1,9 +1,9 @@
 import LeftNav from "@/components/nav-section/LeftNav";
 import Post from "@/components/overlay/Post";
-import RecentNav from "@/components/recent-section/RecentNav";
 import { useState } from "react";
 import Head from "next/head";
 import MessagesNav from "@/components/page-sections/MessagesNav";
+import ViewMessages from "@/components/msg-section/ViewMessages";
 
 
 const MessagesPage = () => {
@@ -31,7 +31,7 @@ const MessagesPage = () => {
           <MessagesNav />
         </div>
         <div className="lg:block hidden">
-          <RecentNav />
+          <ViewMessages />
         </div>
       </div>
     </>

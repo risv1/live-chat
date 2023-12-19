@@ -1,49 +1,70 @@
 $chat-width: 29vw;
 
-.msgs_nav{
-    width: $chat-width;
-    height: 101vh;
+.msgs_nav {
+  width: $chat-width;
+  height: 101vh;
+  background-color: black;
+  margin-left: 24vw;
+  border: 2px solid rgb(34, 34, 34);
+  z-index: 0;
+  overflow-y: auto;
+
+  @media screen and (max-width: 1020px) {
+    width: 100%;
+  }
+
+  .msgs_head {
+    width: $chat-width - 0.2;
     background-color: black;
-    margin-left: 24vw;
-    border: 2px solid rgb(34, 34, 34);
-    z-index: 0;
-    overflow-y: auto;
+    opacity: 0.95;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid rgb(34, 34, 34);
+  }
 
-    @media screen and (max-width: 1020px) {
-        width: 100%;
-    }
+  .msgs_loader {
+    margin-top: 11.5vh;
+  }
 
-    .msgs_head{
-        width: $chat-width - 0.2;
-        background-color: black;
-        opacity: 0.95;
-        height: 10vh;
-        display: flex;
-        align-items: center;
-        border-bottom: 3px solid rgb(34, 34, 34);
-    }
-
-    .msgs_loader{
-        margin-top: 11.5vh;
-    }
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-.msg_compose{
+.msg_compose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.button {
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: rgb(13, 159, 238);
+  color: white;
+  padding: 13px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(13, 159, 238, 0.736);
+  }
+}
+
+.msg_view {
+  width: $chat-width * 1.5;
+  height: 101vh;
+  border-right: 2px solid rgb(34, 34, 34);
+
+  .msg_load {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
-    padding: 30px;
-
-    .button{
-        margin-top: 20px;
-        border-radius: 25px;
-        background-color: rgb(13, 159, 238);
-        color: white;
-        padding: 13px;
-    }
+    height: 100%;
+    padding-left: 20%;
+  }
 }

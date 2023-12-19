@@ -1,7 +1,7 @@
 import styles from "../../styles/msgs.module.css";
 import ComposeMsg from "../msg-section/ComposeMsg";
 
-const NotificationNav = () => {
+const MessagesNav = () => {
   return (
     <div className={styles.msgs_nav}>
       <div className={`fixed ${styles.msgs_head} `}>
@@ -14,4 +14,4 @@ const NotificationNav = () => {
   );
 };
 
-export default NotificationNav;
+export default MessagesNav;

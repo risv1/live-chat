@@ -28,23 +28,25 @@ const LeftNav = (props: { isModalOpen: boolean; onHandlePost: () => void }) => {
     <div className={styles.left_nav}>
       <div className="mt-10">
         <Link href="/home">
-          <Image src={logo} alt="Logo" className={`${styles.logo} lg:block hidden`} />
+          <Image
+            src={logo}
+            alt="Logo"
+            className={`${styles.logo} lg:block hidden`}
+          />
         </Link>
-        {navSections.map((section, index) => (
-          <NavItem
-            key={section[0]}
-            itemLink={section[0]}
-            itemTitle={section[1]}
-          >
-            {icons[index]}
-          </NavItem>
-        ))}
+          {navSections.map((section, index) => (
+            <NavItem
+              key={section[0]}
+              itemLink={section[0]}
+              itemTitle={section[1]}
+            >
+              {icons[index]}
+            </NavItem>
+          ))}
         <button
-          className={`${styles.button} mb-3`}
+          className={`${styles.button} mb-3 ml-1`}
           onClick={props.onHandlePost}
-        >
-          Post
-        </button>
+        ></button>
       </div>
     </div>
   );

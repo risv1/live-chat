@@ -38,3 +38,8 @@ next-env.d.ts
 #sass
 client/styles/*.css
 client/styles/*.css.map
+
+# src
+src/node_modules
+src/*.js
+src/*/*.js

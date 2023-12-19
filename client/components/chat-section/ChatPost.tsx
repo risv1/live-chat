@@ -7,7 +7,7 @@ const ChatPost = () => {
         placeholder="What is happening?!"
         className={`${styles.textarea} h-16 w-96 mt-4 ml-10 bg-black text-white caret-blue-500`}
       />
-      <button className={`${styles.button} ml-7`}>Post</button>
+      <button className={`${styles.button} ml-3`}></button>
     </div>
   );
 };
