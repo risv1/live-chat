@@ -2,7 +2,7 @@ import LeftNav from "@/components/nav-section/LeftNav";
 import Post from "@/components/overlay/Post";
 import { useState } from "react";
 import Head from "next/head";
-import MessagesNav from "@/components/page-sections/MessagesNav";
+import MessagesNav from "@/sections/MessagesNav";
 import ViewMessages from "@/components/msg-section/ViewMessages";
 
 

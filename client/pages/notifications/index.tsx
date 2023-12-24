@@ -3,7 +3,7 @@ import Post from "@/components/overlay/Post";
 import RecentNav from "@/components/recent-section/RecentNav";
 import { useState } from "react";
 import Head from "next/head";
-import NotificationNav from "@/components/page-sections/NotificationNav";
+import NotificationNav from "@/sections/NotificationNav";
 
 const NotificationsPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

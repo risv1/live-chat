@@ -1,4 +1,4 @@
-import ChatNav from "@/components/page-sections/ChatNav";
+import ChatNav from "@/sections/ChatNav";
 import LeftNav from "@/components/nav-section/LeftNav";
 import Post from "@/components/overlay/Post";
 import RecentNav from "@/components/recent-section/RecentNav";

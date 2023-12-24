@@ -1,6 +1,6 @@
-import ChatFilter from "../chat-section/ChatFilter";
-import styles from "../../styles/chat.module.css";
-import ChatPost from "../chat-section/ChatPost";
+import ChatFilter from "../components/chat-section/ChatFilter";
+import styles from "../styles/chat.module.css";
+import ChatPost from "../components/chat-section/ChatPost";
 
 const ChatNav = () => {
   return (

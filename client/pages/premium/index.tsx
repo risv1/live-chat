@@ -3,7 +3,7 @@ import Post from "@/components/overlay/Post";
 import RecentNav from "@/components/recent-section/RecentNav";
 import { useState } from "react";
 import Head from "next/head";
-import NotificationNav from "@/components/page-sections/NotificationNav";
+import PremiumNav from "@/sections/PremiumNav";
 
 const PremiumPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,7 +27,7 @@ const PremiumPage = () => {
       </div>
       <div className="flex flex-row">
         <div>
-          <NotificationNav />
+          <PremiumNav />
         </div>
         <div className="lg:block hidden">
           <RecentNav />

@@ -3,7 +3,7 @@ import Post from "@/components/overlay/Post";
 import RecentNav from "@/components/recent-section/RecentNav";
 import { useState } from "react";
 import Head from "next/head";
-import ProfileNav from "@/components/page-sections/ProfileNav";
+import ProfileNav from "@/sections/ProfileNav";
 
 const ProfilePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

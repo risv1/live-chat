@@ -21,6 +21,15 @@ $chat-width: 43vw;
         display: flex;
         align-items: center;
         border-bottom: 3px solid rgb(34, 34, 34);
+
+        @media screen and (max-width: 1020px) {
+            width: 100%;
+        }
+
+        @media screen and (max-height: 400px) {
+            height: 25vh;
+        }
+
     }
 
     &::-webkit-scrollbar {
@@ -51,5 +60,5 @@ $chat-width: 43vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 15%;
+    padding-top: 10%;
 }

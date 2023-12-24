@@ -1,9 +1,9 @@
 import LeftNav from "@/components/nav-section/LeftNav";
 import Post from "@/components/overlay/Post";
 import RecentNav from "@/components/recent-section/RecentNav";
-import { useState } from "react";
 import Head from "next/head";
-import ExploreNav from "@/components/page-sections/ExploreNav";
+import ExploreNav from "@/sections/ExploreNav";
+import { useState } from "react";
 
 const ExplorePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
